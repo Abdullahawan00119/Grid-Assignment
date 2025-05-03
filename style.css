@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgb(51, 6, 51);
+}
+.nav-circle , .nav-bar{
+    border: 1px solid red;
+    /* width: 5rem;
+    height: 5rem; */
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 25fr;
+    grid-template-rows: repeat(4,30px);
+}
+.nav-bar{
+    display: grid;
+    grid-column: ;
+}
