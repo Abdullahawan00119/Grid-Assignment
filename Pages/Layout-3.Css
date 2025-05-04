@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(51, 6, 51);
+  }
+  
+  .nav-circle {
+    border-radius: 2rem;
+    height: 2.8rem;
+    background-color: red;
+  }
+  .nav-bar {
+    border-radius: 0.3rem;
+    height: 2rem;
+    background-color: white;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 30fr;
+    grid-template-rows: repeat(4, 30px);
+    gap: 1rem;
+    margin: 1.3rem 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 1284px) {
+    .nav-circle {
+      height: 2.2rem;
+    }
+  }
+  @media (max-width: 1150px) {
+    .nav-circle {
+      height: 2.2rem;
+    }
+  }
+  @media (max-width: 992px) {
+    .nav-circle {
+      height: 2.2rem;
+    }
+  }
+  @media (max-width: 850px) {
+    nav {
+      grid-template-columns: 1fr 1fr 1fr 20fr;
+    }
+    .nav-circle {
+      height: 2.3rem;
+    }
+  }
+  @media (max-width: 650px) {
+    nav {
+      grid-template-columns: 1fr 1fr 1fr 10fr;
+    }
+    .nav-circle {
+      height: 2.3rem;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .nav-circle {
+      height: 2rem;
+    }
+    nav {
+      margin: 1.5rem 2rem;
+    }
+  }
+  @media (max-width: 450px) {
+    .nav-circle {
+      height: 1.5rem;
+    }
+  }
+  
+  /* Nav-End */
+
+
+  .box {
+    border: 1px solid rgb(118, 117, 117);
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 1.5rem;
+    margin: -3rem 3.5rem;
+  }
